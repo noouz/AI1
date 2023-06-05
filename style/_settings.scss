@@ -1,0 +1,99 @@
+@import "../style/variable";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    line-height: $line-height-medium;
+}
+
+body{
+    font-family: $body-font;
+    background-color: $bg-color;
+    color:$second-color;
+    font-weight: $font-regular; //400
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $second-color;
+}
+
+
+
+.mb-160{
+    margin-bottom: 160px;
+}
+.mb-120{
+    margin-bottom: 120px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.lh-150{
+    line-height: 150%;
+}
+
+.fw-700{
+    font-weight: $font-medium;
+}
+
+
+//動畫
+
+@keyframes scalein {
+    from {
+        transform: scale(1);
+      }
+
+    to {
+        transform: scale(1.2);
+      }
+}
+@keyframes scaleout {
+    from {
+        transform: scale(1.2);
+      }
+
+    to {
+        transform: scale(1);
+      }
+}
+
+
+
+

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  line-height: 120%;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.mb-160 {
+  margin-bottom: 160px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.lh-150 {
+  line-height: 150%;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+@keyframes scalein {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes scaleout {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.container {
+  max-width: 1296px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.applications {
+  background-color: #FFFFFF;
+  border-radius: 160px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 20px;
+}
+.applications .tools {
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #020202;
+}
+.applications .tools-list {
+  max-width: 100%;
+  margin: auto;
+}
+.applications .tools-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 24px;
+}
+.applications .tools-list ul .tools-list-item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #F2F2F2;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.applications .tools-list ul .tools-list-item img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  animation-name: scaleout;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.applications .tools-list ul .tools-list-item img:hover {
+  animation-name: scalein;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.applications .tools-list ul .tools-list-item-text {
+  padding: 1.25rem 2rem;
+  border-top: 1px solid #F2F2F2;
+  height: 118px;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+.applications .tools-list ul .tools-list-item-text h3 {
+  margin-bottom: 0.75rem;
+  font-weight: 900;
+}
+.applications .tools-list ul .tools-list-item-text p {
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #525252;
+}
+.applications .tools-list ul .tools-list-item-tag {
+  border-top: 1px solid #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+}
+.applications .tools-list ul .tools-list-item-tag p {
+  cursor: pointer;
+}
+.applications .tools-list ul .tools-list-item-tag i {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
