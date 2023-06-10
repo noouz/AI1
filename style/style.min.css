@@ -89,7 +89,7 @@ a {
   }
 }
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -100,31 +100,18 @@ a {
   background-color: #FFFFFF;
   border-radius: 160px;
   align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 160px 20px;
-}
-.applications .tools {
-  max-width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: #020202;
 }
 .applications .tools-list {
-  max-width: 100%;
-  margin: auto;
-}
-.applications .tools-list ul {
+  max-width: 1290px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 24px;
 }
-.applications .tools-list ul .tools-list-item {
-  width: 350px;
+.applications .tools-list-item {
+  width: 32%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -132,7 +119,7 @@ a {
   border-radius: 1rem;
   overflow: hidden;
 }
-.applications .tools-list ul .tools-list-item img {
+.applications .tools-list-item img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   animation-name: scaleout;
@@ -140,39 +127,38 @@ a {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
-.applications .tools-list ul .tools-list-item img:hover {
+.applications .tools-list-item:hover img {
   animation-name: scalein;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
-.applications .tools-list ul .tools-list-item-text {
+.applications .tools-list-item-text {
   padding: 1.25rem 2rem;
   border-top: 1px solid #F2F2F2;
-  height: 118px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   z-index: 1;
   background-color: #FFFFFF;
 }
-.applications .tools-list ul .tools-list-item-text h3 {
+.applications .tools-list-item-text h3 {
   margin-bottom: 0.75rem;
   font-weight: 900;
 }
-.applications .tools-list ul .tools-list-item-text p {
+.applications .tools-list-item-text p {
   font-size: 0.875rem;
   line-height: 150%;
   color: #525252;
 }
-.applications .tools-list ul .tools-list-item-tag {
+.applications .tools-list-item-tag {
   border-top: 1px solid #F2F2F2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 2rem;
 }
-.applications .tools-list ul .tools-list-item-tag p {
-  cursor: pointer;
-}
-.applications .tools-list ul .tools-list-item-tag i {
+.applications .tools-list-item-tag a {
+  color: #020202;
   font-size: 1.25rem;
-  cursor: pointer;
 }
